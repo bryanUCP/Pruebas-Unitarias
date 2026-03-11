@@ -19,7 +19,7 @@ jobs:
           - name: Setup .NET
             uses: actions/setup-dotnet@v4
             with:
-              dotnet-version: ${{ env.DOTNET_VERSION }} #DOTNET_VERSION
+              dotnet-version: ${{env.DOTNET_VERSION}} #DOTNET_VERSION
 
           - name: Build with dotnet
-            run: dotnet build --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
+            run: dotnet build --configuration ${{env.BUILD_CONFIGURATION}} --no-restore
